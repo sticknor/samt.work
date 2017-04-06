@@ -1,0 +1,135 @@
+body{
+	height: 100000px;
+	text-align: center;
+	-webkit-user-select: none;
+}
+
+#canvas{
+	position: fixed;
+	top: 0px;
+	left:0px;
+}
+
+#p5_loading{
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	margin-top: 20%;
+
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 30px;	
+}
+
+#navigation{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+#information{
+	font-family: "Lucida Console", Monaco, monospace;
+	padding: 15px;
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	font-size: 12px;
+	text-align: left;
+	line-height: 16px;
+	opacity: .5;
+}
+
+#information:hover{
+	opacity: 1;
+}
+
+/*     ONE/FOUR      */
+
+#oneBackground{
+	background-image: url("one/background.svg");
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+        background-size: cover;
+}
+
+#oneLoading1{
+	color: #f05656;
+}
+
+#oneLoading2{	
+	color: white;
+	opacity: .7;
+}
+
+#oneLoading3{
+	color: #904160;
+	opacity: 0.5;
+}
+
+
+/*///////////////////*/
+
+/*     TWO/FOUR      */
+
+#twoBackground{
+	background-image: url("two/background.svg");
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+        background-size: cover;
+}
+
+#twoLoading1{
+	color: #ac2163;
+}
+
+#twoLoading2{	
+	color: white;
+	opacity: .7;
+}
+
+#twoLoading3{
+	color: #ff0000;
+	opacity: .7;
+}
+
+
+/*///////////////////*/
+
+
+/*     TWO/FOUR      */
+
+#threeBackground{
+	background-image: url("three/background.svg");
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+        background-size: cover;
+}
+
+#threeLoading1{
+	color: #ff9900;
+}
+
+#threeLoading2{	
+	color: white;
+	opacity: .7;
+}
+
+#threeLoading3{
+	color: #999933;
+	opacity: .5
+}
+
+
+/*///////////////////*/
