@@ -258,22 +258,15 @@ header{
 .leftBarIcon{
 	width: 50%;
 	margin: auto;
-	padding-bottom: 15px;
-}
-
-.leftBarIcon img{
-	width: 100%;
-	max-width: 100px;
-	margin-bottom: 5px; 
 }
 
 .leftBarIcon .title{
-	font-size: 12px;
+	font-size: 16px;
+	padding-bottom: 25px;
 }
 
-.leftBarIcon:hover img{
-	width: 103%;
-	max-width: 1000px;
+.leftBarIcon .title:hover{
+	font-size: 20px;
 }
 
 #leftBar{
@@ -312,8 +305,6 @@ header{
 	padding-left: 0px;
 	width: 60%;
 }
-
-
 
 .workTitle{
 	font-weight: 400;
