@@ -4,46 +4,43 @@
   <title>Sam Ticknor</title>
     <script src="jquery-1.9.0.js"></script>
     <script src = "fadein.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <script>
+
+      $(document).ready(function() {
+        $("#work").hover(function(){
+           $("#work").stop();
+        });
+
+        $('#work').animate({
+            scrollLeft: 9000,
+        }, 120000);
+      })
+      
+    </script>
+
     <link rel="stylesheet" href="reset.css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600italic,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300' rel='stylesheet' type='text/css'> 
   </head>
   <body>
-    <div id = "leftBar">
-    </div>
     <div id = "viewer" class = "noSee">
-      <div id = "header">
-        <div id = "projectTitle">
-          Paintings
+        <div class= "text2">
+          Sam Ticknor <br>
+          Nov. 5, 2017
         </div>
-      </div>
+        <div class= "text">
+          I’ve been struggling to write an artist statement for many years now. It is difficult for me to evaluate what my work is about as I rush to make it, and the ideas are always changing. I have enjoyed making all kinds of art. Now, painting is my favorite. I work from my head, creating a scene's characters, colors, space... I make things up as I go. Sometimes I will put in a color or element that doesn’t work. Painting is really tricky to undo, so I work with those mistakes. I take longs breaks, considering what to do next.
+        </div>
 
       <div id = "work">
+        <div style="width: 20%;height: 500px;display: inline-block;"></div>
       
         <div class = "workSlide">
-          <div style="padding-bottom: 75px;">
-            <img src="images/fulls/full_paintings_pear_trees.png" class = "workImage" style="height: 350px;">
-          </div>
+            <img src="images/fulls/full_paintings_bobRoss.jpg" class = "workImage">
           <div class = "workTitle">
-            Pear Trees
-          </div>
-          <div>
-            <span class = "workYear">
-              2016 |
-            </span>
-            <span class = "workMedium">
-              Gouache on Paper 16" x 16"
-            </span>
-          </div>
-        </div>
-
-        <div class = "workSlide">
-          <div style="height:500px;">
-            <img src="images/fulls/full_paintings_bobRoss.jpg" class = "workImage large">
-          </div>
-          <div class = "workTitle">
-             &nbsp;
+             The Wide Valley
           </div>
           <div>
             <span class = "workYear">
@@ -56,9 +53,22 @@
         </div>
 
         <div class = "workSlide">
-          <div style="padding-bottom: 50px;">
-            <img src="images/fulls/full_paintings_still_life_1.jpg" class = "workImage" style="height: 400px;">
+              <img src="images/fulls/g.png" class = "workImage">
+          <div class = "workTitle">
+            Friday Evening Cartoons
           </div>
+          <div>
+            <span class = "workYear">
+              2017 |
+            </span>
+            <span class = "workMedium">
+             Oil on Canvas 26" * 30" (2) 
+            </span>
+          </div>
+        </div>
+
+        <div class = "workSlide">
+            <img src="images/fulls/full_paintings_still_life_1.jpg" class = "workImage">
           <div class = "workTitle">
             Still Life in New York
           </div>
@@ -73,14 +83,42 @@
         </div>
 
         <div class = "workSlide">
-          <div style="padding-bottom: 20px;">
-            <div style="padding-bottom: 20px;">
-              <img src="images/fulls/full_paintings_medusa.jpg" class = "workImage" style="width:250px;height: auto">
-            </div>
-              <img src="images/fulls/full_paintings_studentDriver.jpg" class = "workImage" style="width:250px;height: auto">
-            </div>
+            <img src="images/fulls/BaseMap.png" class = "workImage">
           <div class = "workTitle">
-            Medusa as Jack O' Lantern, Student Driver
+            Nature In Pittsburgh
+          </div>
+          <div>
+            <span class = "workYear">
+              2017 |
+            </span>
+            <span class = "workMedium">
+              Mixed Media on Paper 36" x 20"
+            </span>
+          </div>
+        </div>
+
+        <div class = "workSlide">
+            <img src="images/fulls/full_paintings_stanleyCup.jpg" class = "workImage">
+            <div class = "workTitle">
+              Stanley Cup Finals
+            </div>
+          <div>
+            <span class = "workYear">
+              2016 |
+            </span>
+            <span class = "workMedium">
+              Gouache on Paper 20" x 16"
+            </span>
+          </div>
+        </div>
+
+        <div class = "workSlide">
+            <div style="padding-bottom: 50px;">
+              <img src="images/fulls/full_paintings_medusa.jpg" class = "workImage" style="width:260px;height: auto">
+            </div>
+              <img src="images/fulls/full_paintings_studentDriver.jpg" class = "workImage" style="width:260px;height: auto">
+          <div class = "workTitle">
+            Medusa O' Lantern, Student Driver
           </div>
           <div>
             <span class = "workYear">
@@ -93,11 +131,9 @@
         </div>
 
         <div class = "workSlide">
-          <div style="height:500px;">
-            <img src="images/fulls/full_paintings_learningFractions.jpg" class = "workImage large">
-          </div>
+            <img src="images/fulls/full_paintings_learningFractions.jpg" class = "workImage">
           <div class = "workTitle">
-             Learning Fractions
+             Learning Fractions, A Museum Portrait
           </div>
           <div>
             <span class = "workYear">
@@ -109,10 +145,40 @@
           </div>
         </div>
 
-         <div class = "workSlide">
-          <div style="padding-bottom: 70px;">
-            <img src="images/fulls/full_paintings_selfPortrait.jpg" class = "workImage" style="height:360px;">
+        <div class = "workSlide">
+          <div style="height:500px;">
+            <img src="images/fulls/NoTurnOnRed.png" class = "workImage large">
           </div>
+          <div class = "workTitle">
+             Turning On Red
+          </div>
+          <div>
+            <span class = "workYear">
+              2017 |
+            </span>
+            <span class = "workMedium">
+              Gouache on Paper 10" x 5"
+            </span>
+          </div>
+        </div>
+
+        <div class = "workSlide">
+            <img src="images/fulls/full_paintings_pear_trees.png" class = "workImage">
+          <div class = "workTitle">
+            In Hindsight
+          </div>
+          <div>
+            <span class = "workYear">
+              2016 |
+            </span>
+            <span class = "workMedium">
+              Gouache on Paper 16" x 16"
+            </span>
+          </div>
+        </div>
+
+         <div class = "workSlide">
+            <img src="images/fulls/full_paintings_selfPortrait.jpg" class = "workImage">
           <div class = "workTitle">
             Self Portrait at 24
           </div>
@@ -127,26 +193,25 @@
         </div>
 
         <div class = "workSlide">
-          <div style="padding-bottom: 100px;">
-            <img src="images/fulls/full_paintings_pansies.jpg" class = "workImage" style="height:300px;">
-          </div>
+            <div style="padding-bottom: 35px;">
+               <img src="images/fulls/Wreath.png" class = "workImage" style="width:230px;height: auto">
+            </div>
+              <img src="images/fulls/full_paintings_pansies.jpg" class = "workImage" style="width:230px;height: auto">
           <div class = "workTitle">
-            Learning about pansies
+            Bowls Of Flowers
           </div>
           <div>
             <span class = "workYear">
               2017 |
             </span>
             <span class = "workMedium">
-              Gouache on Paper 10" x 10"
+             Oil, Gouache  
             </span>
           </div>
         </div>
 
         <div class = "workSlide">
-          <div style="padding-bottom: 50px;">
-            <img src="images/fulls/full_paintings_still_life_2.jpg" class = "workImage" style="height:400px;">
-          </div>
+            <img src="images/fulls/full_paintings_still_life_2.jpg" class = "workImage">
           <div class = "workTitle">
             Still Life in Pittsburgh
           </div>
@@ -161,9 +226,7 @@
         </div>
 
         <div class = "workSlide">
-          <div style="padding-bottom: 50px;">
-            <img src="images/fulls/full_paintings_flowers_from_dad.png" class = "workImage" style="height:400px;">
-          </div>
+            <img src="images/fulls/full_paintings_flowers_from_dad.png" class = "workImage">
           <div class = "workTitle">
             Flowers from Dad
           </div>
@@ -178,9 +241,7 @@
         </div>
 
         <div class = "workSlide">
-         <div style="padding-bottom: 30px;">
-            <img src="images/fulls/full_paintings_night_vision.jpg" class = "workImage" style="height:440px;">
-          </div>
+            <img src="images/fulls/full_paintings_night_vision.jpg" class = "workImage">
             <div class = "workTitle">
               Night Vision
             </div>
@@ -194,29 +255,12 @@
           </div>
         </div>
 
-        <div class = "workSlide">
-         <div style="padding-bottom: 90px;">
-            <img src="images/fulls/full_paintings_stanleyCup.jpg" class = "workImage" style="height:320px;">
-          </div>
-            <div class = "workTitle">
-              Stanley Cup
-            </div>
-          <div>
-            <span class = "workYear">
-              2016 |
-            </span>
-            <span class = "workMedium">
-              Gouache on Paper 20" x 16"
-            </span>
-          </div>
-        </div>
+       
 
         <div class = "workSlide">
-          <div style="padding-bottom: 50px;">
-            <img src="images/fulls/full_paintings_cherry_tree.png" class = "workImage" style="height:400px;">
-          </div>
+            <img src="images/fulls/full_paintings_these_friends.png" class = "workImage">
           <div class = "workTitle">
-            &nbsp;
+            Friends Like These
           </div>
           <div>
             <span class = "workYear">
@@ -229,26 +273,7 @@
         </div>
 
         <div class = "workSlide">
-          <div style="padding-bottom: 50px;">
-            <img src="images/fulls/full_paintings_these_friends.png" class = "workImage" style="height:400px;">
-          </div>
-          <div class = "workTitle">
-            These Friends
-          </div>
-          <div>
-            <span class = "workYear">
-              2016 |
-            </span>
-            <span class = "workMedium">
-              Gouache on Paper 16" x 20"
-            </span>
-          </div>
-        </div>
-
-        <div class = "workSlide">
-           <div style="padding-bottom: 50px;">
-            <img src="images/fulls/full_paintings_cool_floor_warm_dog.png" class = "workImage" style="height:400px;">
-          </div>
+            <img src="images/fulls/full_paintings_cool_floor_warm_dog.png" class = "workImage">
           <div class = "workTitle">
             Cool Floor, Warm Dog
           </div>
@@ -262,9 +287,37 @@
           </div>
         </div>
 
+         <div class = "workSlide">
+            <img src="images/fulls/full_paintings_cherry_tree.png" class = "workImage">
+          <div class = "workTitle">
+            So Suddenly
+          </div>
+          <div>
+            <span class = "workYear">
+              2015 |
+            </span>
+            <span class = "workMedium">
+              Gouache on Paper 16" x 20"
+            </span>
+          </div>
+        </div>
+
         
       </div>
+      <div class= "text">
+          I work at a museum lab, the Innovation Studio. We’re a small team working on interactive projects for the Carnegie Museums of Pittsburgh. I’ve worked on exhibits and mobile apps for the Andy Warhol Museum, Carnegie Museum of Art, and Carnegie Museum of Natural History.
+        </div>
+
+
+      <div class= "text">
+          I like to sell and show my artwork. &nbsp;&nbsp;&nbsp;
+          <a href="mailto:srticknor@gmail.com?Subject=Hello" target="_top">contact</a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/sammytthe_________/">follow</a>
+      </div>
+
     </div>
+
+
   
   </body>
 </html>
