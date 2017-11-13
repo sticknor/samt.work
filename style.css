@@ -4,9 +4,11 @@ body{
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
-	font-family: 'Arvo', serif;
-	font-size: 18px;
-	background: #eeeee6;
+	font-weight: 300;
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+	line-height: 1.4;
+	background: #fff;
 	color: #1f2101;
 }
 
@@ -108,15 +110,6 @@ a{
 	padding-top: 75px;
 }
 
-#navElements{
-	font-size: 20px;
-	width: 150px;
-	margin: auto;
-	margin-bottom: 50px;
-	margin-top: 25px;
-	font-weight: 00;
-
-}
 
 #about{
 	float: left;
@@ -241,7 +234,7 @@ header{
 	line-height: 1.4;
 	width: 60%;
 	padding-left: 25%;
-	padding: 5% 20%;
+	padding: 2.5% 20% 5% 20%;
 	text-align: left;
 }
 
@@ -251,7 +244,7 @@ header{
 	padding-left: 0px;
 	line-height: 1.4;
 	width: 60%;
-	padding: 5% 20% 0.5% 20%;
+	padding: 5% 20% 0% 20%;
 	text-align: left;
 }
 
