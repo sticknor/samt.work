@@ -89,11 +89,9 @@ a{
 }
 
 .workDescription{
-	font-size: 14px;
 	line-height: 18px;
 	color: #999;
-	display: block;
-	padding-bottom: 5px;
+	display: inline-block;
 }
 
 .workText{
