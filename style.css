@@ -9,7 +9,7 @@ body{
 	font-size: 20px;
 	line-height: 1.4;
 	background: #fff;
-	color: #1f2101;
+	color: #666;
 }
 
 ::-webkit-scrollbar { 
@@ -37,7 +37,7 @@ a{
 	opacity: 1;
 }
 
-#work{
+#work, #slides{
 	text-align: left;
 	width: auto;
   	overflow-y: hidden;
@@ -49,6 +49,46 @@ a{
 .workSlide{
 	display: inline-block;
 	margin-right: 100px;
+}
+
+.fullscreen {
+	position:  absolute;
+	top: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+}
+
+.videoWrapperWrapper {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+} 
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.centered {
+	margin-right: 0px;
+	display: block;
+}
+
+.centeredImage {
+	width: 60%;
+	margin-left: 20%;
 }
 
 .workImage {
@@ -76,6 +116,7 @@ a{
 	padding-bottom: 10px;
 	display: block;
 	font-style: italic;
+	color: #222;
 }
 
 .workYear, .workMedium{
@@ -114,6 +155,16 @@ a{
 		padding-bottom: 0px !important;
 		width: 80% !important;
 	}	
+
+	.videoWrapperWrapper {
+		width: 80% !important;
+		margin-left: 10% !important
+	}
+
+	.centeredImage {
+		width: 80% !important;
+		margin-left: 10% !important;
+	}
 
 	.workImage {
 		height: 300px !important;
