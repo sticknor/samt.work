@@ -13,6 +13,17 @@
         });
 
         $("#work").on('vmousedown', function(){
+           console.log('vmousedown');
+           $("#work").stop();
+        });
+        
+        $("#work").on('taphold', function(){
+           console.log('taphold');
+           $("#work").stop();
+        });
+        
+        $("#work").on('tap', function(){
+           console.log('tap');
            $("#work").stop();
         });
 
