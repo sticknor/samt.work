@@ -181,6 +181,20 @@ a{
 		margin-right: 50px;
 	}
 
+}
 
-
+@media only screen and (max-width: 800px) {
+    body{
+	margin-top: 50px;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	font-weight: 300;
+	font-family: 'Crimson Text', serif;
+	font-size: 22px;
+	line-height: 1.4;
+	background: #fff;
+	color: #666;
+}
 }

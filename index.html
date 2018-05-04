@@ -5,6 +5,9 @@
     <script src="jquery-1.9.0.js"></script>
     <script src = "fadein.js"></script>
     <link href="https://fonts.googleapis.com/css?=Crimson+Text" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
     <script>
 
       $(document).ready(function() {
@@ -12,20 +15,12 @@
            $("#work").stop();
         });
 
-        $("#work").on('vmousedown', function(){
-           console.log('vmousedown');
-           $("#work").stop();
-        });
-        
-        $("#work").on('taphold', function(){
-           console.log('taphold');
-           $("#work").stop();
-        });
-        
-        $("#work").on('tap', function(){
-           console.log('tap');
-           $("#work").stop();
-        });
+        function handleStart() {
+          $("#work").stop();
+        }
+
+        var el = document.getElementById("work");
+        el.addEventListener("touchstart", handleStart, false);
 
         $('#work').animate({
             scrollLeft: 11000,
@@ -33,6 +28,7 @@
       })
       
     </script>
+
 
     <link rel="stylesheet" href="reset.css">
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -44,15 +40,30 @@
     <div id = "viewer" class = "noSee">
         <div class= "text2">
           Sam Ticknor <br>
-          Feb. 8, 2018
+          May. 3, 2018
         </div>
 
         <div class= "text">
-          I’ve struggled to write an artist statement for many years now. And really, this is not it. It is difficult to tell what my work is "about". I'm usually rushing to make it, and the ideas are always changing. I have enjoyed making all kinds of art. Now, painting is my favorite. I work from my head, creating a scene's characters, colors, space... I make things up as I go. Sometimes I will put in a color or element that doesn’t work. Painting is really tricky to undo, so I work with those mistakes. I take longs breaks, considering what to do next.
+          I have enjoyed making all kinds of art. Now, I'm mostly practicing painting and ceramics. I'm in a rush to make new things. When I see something that sticks to my brain, I have to paint. By the time I paint it out of my head, I've already forgot a lot of details. So I make up new characters and lighting and space as I go.
         </div>
 
       <div id = "work">
         <div class="emptyStart" style="width: 20%;height: 500px;display: inline-block;"></div>
+
+                <div class = "workSlide">
+            <img src="images/openswim.jpg" class = "workImage">
+            <div class = "workTitle">
+              Open Swim
+            </div>
+          <div>
+            <span class = "workYear">
+              2018 |
+            </span>
+            <span class = "workMedium">
+              Oil on Masonite 40" x 50"
+            </span>
+          </div>
+        </div>
       
         <div class = "workSlide">
             <img src="images/full_paintings_bobRoss.jpg" class = "workImage">
@@ -80,21 +91,6 @@
             </span>
             <span class = "workMedium">
               Gouache on Paper 16" x 20"
-            </span>
-          </div>
-        </div>
-
-        <div class = "workSlide">
-            <img src="images/openswim.jpg" class = "workImage">
-            <div class = "workTitle">
-              Open Swim
-            </div>
-          <div>
-            <span class = "workYear">
-              2018 |
-            </span>
-            <span class = "workMedium">
-              Oil on Masonite 40" x 50"
             </span>
           </div>
         </div>
@@ -223,7 +219,7 @@
         <div class = "workSlide">
             <img src="images/full_paintings_pear_trees.png" class = "workImage">
           <div class = "workTitle">
-             A Dreamed Up Place
+             Pear Trees
           </div>
           <div>
             <span class = "workYear">
@@ -238,7 +234,7 @@
         <div class = "workSlide">
             <img src="images/raisingBuddy.png" class = "workImage">
           <div class = "workTitle">
-            The Painter's Puppy
+            Painter's Puppy
           </div>
           <div>
             <span class = "workYear">
@@ -282,21 +278,6 @@
         </div>
 
         <div class = "workSlide">
-            <img src="images/full_paintings_night_vision.jpg" class = "workImage">
-            <div class = "workTitle">
-              Night Vision
-            </div>
-          <div>
-            <span class = "workYear">
-              2016 |
-            </span>
-            <span class = "workMedium">
-              Gouache on Canvas 24" x 24"
-            </span>
-          </div>
-        </div>
-
-        <div class = "workSlide">
             <img src="images/full_paintings_these_friends.png" class = "workImage">
           <div class = "workTitle">
             Friends Like These
@@ -322,6 +303,21 @@
             </span>
             <span class = "workMedium">
               Gouache on Paper 16" x 20"
+            </span>
+          </div>
+        </div>
+
+        <div class = "workSlide">
+            <img src="images/full_paintings_night_vision.jpg" class = "workImage">
+            <div class = "workTitle">
+              Night Vision
+            </div>
+          <div>
+            <span class = "workYear">
+              2016 |
+            </span>
+            <span class = "workMedium">
+              Gouache on Canvas 24" x 24"
             </span>
           </div>
         </div>
@@ -359,7 +355,6 @@
 
 
       <div class="text">
-        This animation was an exercise in drawing and patience. A ghost discovers and pursues valuable treasure. Ultimately, he cannot get what he wants. 
       </div>
 
       <div class="videoWrapperWrapper">
@@ -417,9 +412,19 @@
           </span>
         </div>
       </div>
+
+          <div class="text" style="padding-top: 0px !important;">
+        In October 2017, the Studio launched three interactive projects in Carnegie Museum of Natural History’s exhibition <a href="https://carnegiemnh.org/visitor/we-are-nature/">We Are Nature: Living in the Anthropocene</a>. I was very excited to create the illustrations, and happy to bring them to life with code. For further information about these projects, see the <a href="https://github.com/CMP-Studio/WeAreNature">Github repo</a>. You can also read <a href="https://studio.carnegiemuseums.org/an-experiment-in-data-visualization-782beb018308">An Experiment In Data Visualization</a>: a blog post about one of the projects which features over 6000 frames of interactive animation.
+      </div>
+
+       <div class="text">
+          I like to sell and show my artwork. &nbsp;&nbsp;&nbsp;
+          <a href="mailto:srticknor@gmail.com?Subject=Hello" target="_top">contact</a> &nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/sammytthe_________/">follow</a>
+      </div>
         
        <div class = "workSlide centered text" style="padding-bottom: 15px !important;">
-         <img src="images/full_paintings_selfPortrait.jpg" class = "workImage">
+         <img src="images/full_paintings_selfPortrait.jpg" style="width:100%;" >
           <div>
            <span class = "workYear">
               2017 |
@@ -430,12 +435,7 @@
         </div>
       </div>
 
-      <div class="text">
-          I like to sell and show my artwork. &nbsp;&nbsp;&nbsp;
-          <a href="mailto:srticknor@gmail.com?Subject=Hello" target="_top">contact</a> &nbsp;&nbsp;&nbsp;
-          <a href="https://www.instagram.com/sammytthe_________/">follow</a>
-      </div>
-
+    
     </div>
 
 
