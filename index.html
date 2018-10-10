@@ -8,8 +8,10 @@
       $(document).ready(function() {
         window.addEventListener("hashchange", () => { window.location.reload(true) }, false);
         var hash = window.location.hash.replace(/^#/,'');
-        $("#pagecontent").load(hash+".html");
-        $("#id_"+hash).addClass("highlighted");
+        if (hash != "") {
+          $("#pagecontent").load(hash+".html");
+          $("#id_"+hash).addClass("highlighted");
+        }
       });
     </script>
     <link rel="icon" type="image/png" href="favicon.png" />
