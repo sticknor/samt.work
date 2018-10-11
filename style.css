@@ -78,6 +78,7 @@ dot{
 	color: #0294CE;
 	height: 100%;
 	padding: 3px;
+	padding-top: 0px;
 }
 
 tr > td {
