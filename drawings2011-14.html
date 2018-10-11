@@ -1,19 +1,191 @@
 <html>
   <head>
     <script src="grid.js"></script>
+    <script>
+	    $(document).ready(function() {
+	        $("#work").hover(function(){
+	           $("#work").stop();
+	        });
+
+	        function handleStart() {
+	          $("#work").stop();
+	        }
+
+	        var el = document.getElementById("work");
+	        el.addEventListener("touchstart", handleStart, false);
+
+	        $('#work').animate({
+	            scrollLeft: 12000,
+	        }, 90000);
+	      })
+    </script>
   </head>
   <body>
     <div class="pagecontent" style="padding-top:30px;">
-    	<div class="text">
-		</div>
 
-		<div class="text">
-			<div class="header">Sketchbooks</div>
-		</div>
+    	<div id = "work">
+		<div class = "workSlide">
+            <img src="images/sketchbooks_00.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_01.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_02.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_03.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_04.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_05.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_06.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_07.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_08.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_09.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_10.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_11.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_12.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_13.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_14.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_15.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_16.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_17.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_18.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_19.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_20.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_21.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_22.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_23.png" class = "workImage">
+        </div>
+        <div class = "workSlide">
+            <img src="images/sketchbooks_24.png" class = "workImage">
+        </div>
+    </div>
+		
 
-		<div class="text">
-			<div class="header">Grid of any larger drawing pieces</div>
-		</div>
+
+		<div class="grid">
+
+		<div class="grid-item clickable" data-low-res="images/TheNewHorizon.png" data-high-res="images/TheNewHorizon_large.png">
+          <img style="width:100%" src="images/TheNewHorizon.png">
+          <div class="workMedium">
+           <i>The New Horizon</i><br/>Ink on Paper
+          </div>
+        </div> 
+
+         <div class="grid-item clickable" data-low-res="images/ApartmentLiving.png" data-high-res="images/ApartmentLiving_large.png">
+          <img style="width:100%" src="images/ApartmentLiving.png">
+          <div class="workMedium">
+           <i>Apartment Living</i><br/>Intaglio
+          </div>
+        </div>  
+
+         <div class="grid-item clickable" data-low-res="images/EarlyFall.png" data-high-res="images/EarlyFall_large.png">
+          <img style="width:100%" src="images/EarlyFall.png">
+          <div class="workMedium">
+           <i>Early Fall</i><br/>Gouache and Pencil on Paper
+          </div>
+        </div> 
+
+
+        <div class="grid-item clickable" data-low-res="images/GardenParty1.png" data-high-res="images/GardenParty1_large.png">
+          <img style="width:100%" src="images/GardenParty1.png">
+          <div class="workMedium">
+           <i>Garden Party</i><br/>Collage
+          </div>
+        </div>  
+
+        <div class="grid-item clickable" data-low-res="images/GardenParty3.png" data-high-res="images/GardenParty3_large.png">
+          <img style="width:100%" src="images/GardenParty3.png">
+          <div class="workMedium">
+           <i>Garden Party</i><br/>Collage
+          </div>
+        </div>  
+
+        <div class="grid-item clickable" data-low-res="images/GardenParty2.png" data-high-res="images/GardenParty2_large.png">
+          <img style="width:100%" src="images/GardenParty2.png">
+          <div class="workMedium">
+           <i>Garden Party</i><br/>Collage
+          </div>
+        </div>  
+
+ 		<div class="grid-item clickable" data-low-res="images/PostCrit.png" data-high-res="images/PostCrit_large.png">
+          <img style="width:100%" src="images/PostCrit.png">
+          <div class="workMedium">
+           <i>After Class</i><br/>Silkscreen and Watercolor
+          </div>
+        </div> 
+        
+
+        <div class="grid-item clickable" data-low-res="images/FunnyDays1.png" data-high-res="images/FunnyDays1_large.png">
+          <img style="width:100%" src="images/FunnyDays1.png">
+          <div class="workMedium">
+           <i>Funny Days #2</i><br/>Comic
+          </div>
+        </div> 
+
+        <div class="grid-item clickable" data-low-res="images/FunnyDays2.png" data-high-res="images/FunnyDays2_large.png">
+          <img style="width:100%" src="images/FunnyDays2.png">
+          <div class="workMedium">
+           <i>Funny Days #5</i><br/>Comic
+          </div>
+        </div> 
+
+       	<div class="grid-item clickable" data-low-res="images/FunnyDays4.png" data-high-res="images/FunnyDays4_large.png">
+          <img style="width:100%" src="images/FunnyDays4.png">
+          <div class="workMedium">
+           <i>Funny Days #12</i><br/>Comic
+          </div>
+        </div> 
+
+        <div class="grid-item clickable" data-low-res="images/UntitledClouds.png" data-high-res="images/UntitledClouds_large.png">
+          <img style="width:100%" src="images/UntitledClouds.png">
+          <div class="workMedium">
+           <i>Untitled </i><br/>Lithograph and Pencil
+          </div>
+        </div>  
+
+      </div>
+
 	</div>
   </body>
 </html>
