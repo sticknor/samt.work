@@ -67,6 +67,29 @@ dot{
   background-size: cover;
 }
 
+.projectinfo {
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.projectinfo >img {
+	object-fit: contain;
+	margin-right: 30px;
+	width: 30%;
+}
+
+.projectinfo > table {
+	flex: 1;
+}
+
+.projectrow > td:first-child {
+	font-weight: bold; 
+	padding-right: 30px;
+	width: 100px;
+}
 
 
 .topbarheader, .header {
