@@ -263,14 +263,8 @@ i {
 @media (max-width: 620px) {
 
 	#index {
-  background: url(images/MemoriesAtDesk_large.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-   height: 100%;
-    overflow: hidden;
-}
+	  	background: none;
+	}
 
 	body {
 		font-size: 16px;
