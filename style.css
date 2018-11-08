@@ -59,6 +59,13 @@ dot{
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), white);
 }
 
+.topbarheaders {
+	display:flex;
+	align-items:top;
+	flex:0.9;
+	justify-content:space-around;
+}
+
 #index {
   background: url(images/MemoriesAtDesk_large.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -86,7 +93,6 @@ dot{
 }
 
 .projectrow > td:first-child {
-	font-weight: bold; 
 	padding-right: 30px;
 	width: 100px;
 }
@@ -94,7 +100,6 @@ dot{
 
 .topbarheader, .header {
 	display: inline-block;
-	font-size: 20px;
 	line-height: 1;
 	vertical-align: top;
 	text-decoration: none !important;
@@ -131,7 +136,6 @@ table {
 
 .topbarsubheader {
 	display: block;
-	font-size: 16px;
 	text-align: left;
 	padding: 3px;
 	text-decoration: none !important;
@@ -250,65 +254,63 @@ i {
 	padding-top: 5px;
 	display: block;
 	font-style: italic;
-	font-size: 16px;
 }
 
 .workYear, .workMedium{
-	font-size: 16px;
 	margin-top: 5px;
 }
 
-@media (max-width: 800px) {
-
-	.text {
-		padding: 10% !important;
-		width: 80% !important;
+@media (max-width: 620px) {
+	body {
+		font-size: 16px;
 	}
 
-	.text2 {
-		padding: 10% !important;
-		padding-bottom: 0px !important;
-		width: 80% !important;
+	.grid-item {
+		width: 95%;
+	}
+
+	.topbar {
+		flex-direction: column;
+		height: auto;
+    	padding: 30px 0px;
 	}	
 
-	.videoWrapperWrapper {
-		width: 80% !important;
-		margin-left: 10% !important
+	.topbarheaders {
+		flex-direction: column;
 	}
 
-	.centeredImage {
-		width: 80% !important;
-		margin-left: 10% !important;
+	.topbarheader, .topbarsubheader{
+		text-align: center !important;
 	}
 
-	.workImage {
-		height: 300px !important;
+	.topbarheader {
+		margin-top: 10px;
+		padding-top: 3px;
 	}
 
-	.emptyStart {
-		width: 10% !important;
-		height: 300px !important;
+	td { 
+		display: block !important;
 	}
 
-	.workSlide{
-		display: inline-block;
-		margin-right: 50px;
+	tr > td:first-child {
+		padding-top: 15px;
+
 	}
 
-}
+	.projectinfo {
+    	flex-direction: column;
+	}
+	.projectinfo > img{
+    	width: 100%;
+	}
 
-@media only screen and (max-width: 800px) {
-    body{
-	margin-top: 50px;
-	text-align: center;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-	font-weight: 300;
-	font-family: 'Crimson Text', serif;
-	font-size: 22px;
-	line-height: 1.4;
-	background: #fff;
-	color: #666;
-}
+	.projectrow > td {
+		padding-top: 0px !important;
+	}
+
+	.projectrow > td {
+		padding: 0px;
+	}
+
+
 }
