@@ -67,7 +67,7 @@ dot{
 }
 
 #index {
-  background: url(images/MemoriesAtDesk_large.png) no-repeat center center; 
+  background: url(images/MemoriesAtDesk_large.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,6 +261,17 @@ i {
 }
 
 @media (max-width: 620px) {
+
+	#index {
+  background: url(images/MemoriesAtDesk_large.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   height: 100%;
+    overflow: hidden;
+}
+
 	body {
 		font-size: 16px;
 	}
