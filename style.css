@@ -146,9 +146,9 @@ table {
   margin-bottom: 30px;
 }
 
-.small>img, .small>div{
-  width: 70% !important;
-  margin-left: 15%;
+.grid-item>img, .grid-item>div{
+  width: 80% !important;
+  margin-left: 10%;
 }
 
 .smaller>img, .smaller>div{
