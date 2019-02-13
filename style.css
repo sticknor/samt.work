@@ -23,6 +23,7 @@ body{
 	right: 0px;
 	overflow: scroll;
 	padding: 5% 0;
+	position: absolute;
 
 }
 
@@ -37,7 +38,7 @@ body{
 .highlighted {
 	padding: 3px;
 	border-radius: 2px;
-	background-color: #BFE6EF !important;
+	background-color: #d9e5b5 !important;
 	opacity: 1 !important;
 }
 
@@ -67,7 +68,7 @@ dot{
 }
 
 #index {
-  background: url(images/MemoriesAtDesk_large.png) no-repeat center center fixed; 
+  background: url(images/Monkey_large.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -103,7 +104,7 @@ dot{
 	line-height: 1;
 	vertical-align: top;
 	text-decoration: none !important;
-	color: #0294CE;
+	color: #fc9300;
 	height: 100%;
 	padding: 3px;
 	padding-top: 0px;
